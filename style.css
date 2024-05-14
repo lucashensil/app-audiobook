@@ -35,8 +35,8 @@ button {
   font-size: 1.5rem;
 }
 
-
-#anterior, #proximo {
+#anterior,
+#proximo {
   font-size: 3rem;
 }
 
@@ -48,4 +48,37 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.progress-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 55px;
+  padding-bottom: 10px;
+}
+
+#progress-bar {
+  width: 400px;
+  height: 20px; 
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+  margin-right: 10px;
+}
+
+#progress-bar::-webkit-progress-bar {
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+
+}
+
+#progress-bar::-webkit-progress-value {
+  background-color: #007bff; 
+  border-radius: 10px; 
+}
+
+#current-time,
+#duration {
+  font-size: 14px;
+  color: #f0f0f0;
 }
